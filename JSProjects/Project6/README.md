@@ -1,2 +1,0 @@
-# projectGit
-Test Git
