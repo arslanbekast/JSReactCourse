@@ -28,3 +28,7 @@ console.log(fruit.substr(5, 5)); //Второй параметр - кол-во �
 const num = 12.2;
 // Округление
 console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
