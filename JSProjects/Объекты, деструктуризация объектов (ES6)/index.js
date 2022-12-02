@@ -13,11 +13,17 @@ const options = {
     }
 };
 options.makeTest();
-// console.log(options.name);
+
+// Деструктуризация объекта
+const {border, bg} = options.colors;
+console.log(border);
+console.log(bg);
+
+console.log(options.name);
 
 // Удалить свойство объекта
-// delete options.name;
-// console.log(options);
+delete options.name;
+console.log(options);
 
 // Перебор объекта
 for (let key in options) {
