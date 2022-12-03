@@ -78,7 +78,7 @@ newArray2[0] = 'e';
 console.log(oldArray2);
 console.log(newArray2);
 
-// Spread (...) оператор разворачивается элементы массива или объекта
+// Spread (...) оператор разворачивает элементы массива или объекта. Появился в EcmaScript 9
 
 const video = ['youtube', 'vimeo', 'rutube'],
       blogs = ['wordpress', 'livejournal', 'blogger'],
