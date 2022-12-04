@@ -23,7 +23,7 @@ const personalPlanPeter = {
         return str;
     }
 };
-// console.log(personalPlanPeter.showAgeAndLangs());
+console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
 function showExperience(plan) {
     const {exp} = plan.skills;
     return exp;
