@@ -48,6 +48,13 @@ const personalMovieDB = {
         if (!hidden) {
             console.log(personalMovieDB);
         }
+    },
+    toggleVisibleMyDB: function() {
+        if (personalMovieDB.privat) {
+            personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
+        }
     }
 };
 
