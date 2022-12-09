@@ -40,3 +40,47 @@ function showProgrammingLangs(plan) {
     return str;
 }
 console.log(showProgrammingLangs(personalPlanPeter));
+
+
+
+const shoppingMallData = {
+    shops: [
+        {
+            width: 10,
+            length: 5
+        },
+        {
+            width: 15,
+            length: 7
+        },
+        {
+            width: 20,
+            length: 5
+        },
+        {
+            width: 8,
+            length: 10
+        }
+    ],
+    height: 5,
+    moneyPer1m3: 30,
+    budget: 50000
+};
+
+function isBudgetEnough(data) {
+    
+    // Деструктуризация объекта
+    const {shops, height, moneyPer1m3, budget} = data;
+    let sum = 0;
+
+    shops.forEach((obj) => {
+        sum += obj.width * obj.length * height * moneyPer1m3;
+    });
+
+    if (sum < budget) {
+        return 'Бюджета достаточно';
+    } else {
+        return 'Бюджета недостаточно';
+    }
+}
+console.log( isBudgetEnough(shoppingMallData) );
