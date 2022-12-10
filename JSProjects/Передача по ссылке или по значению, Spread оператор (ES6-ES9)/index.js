@@ -22,7 +22,7 @@ copy.a = 10;
 console.log(obj);
 console.log(copy);
 
-// Функция длс копирования объекта
+// Функция для копирования объекта
 // Поверхностная копия
 function copyFunc(mainObj) {
     let objCopy = {};
