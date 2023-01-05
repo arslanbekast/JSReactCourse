@@ -60,7 +60,7 @@ Promise.all([test(1000), test(2000)]).then(() => {
     console.log('All');
 });
 
-// Promise.race выполняется после выполнения первого промиса в аргументе
+// Promise.race выполняется после выполнения одного из промисов в аргументе
 Promise.race([test(1000), test(2000)]).then(() => {
     console.log('Race');
 });
