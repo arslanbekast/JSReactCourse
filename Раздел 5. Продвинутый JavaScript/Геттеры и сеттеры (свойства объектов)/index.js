@@ -12,11 +12,12 @@ const person = {
         return this.age;
     },
 
-    set userAge(age) {
-        this.age = age;
+    set userAge(num) {
+        this.age = num;
     }
 
 
 };
 
+console.log(person.userAge = 30); // userAge - свйоство акцессор
 console.log(person.userAge); // userAge - свйоство акцессор
