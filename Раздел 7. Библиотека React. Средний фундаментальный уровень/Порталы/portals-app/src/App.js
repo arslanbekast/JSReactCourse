@@ -9,7 +9,7 @@ class Form extends Component {
     }
 
     componentDidMount() {
-        setTimeout(this.handleClick, 3000);
+        setTimeout(() => this.handleClick(), 3000);
     }
 
     handleClick = () => {
